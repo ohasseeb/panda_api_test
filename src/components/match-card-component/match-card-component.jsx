@@ -1,5 +1,6 @@
 import { render } from "@testing-library/react";
 import React, { Component } from "react";
+import "./match-card-styles.css";
 
 export const Match_card_component = (props) => {
   const render_matches = () => {
@@ -22,7 +23,7 @@ export const Match_card_component = (props) => {
   console.log(props.match);
 
   return (
-    <div>
+    <div className="match-card-container">
       {props.match.name}
       <div>
         {" "}
