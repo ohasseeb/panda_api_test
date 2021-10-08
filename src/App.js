@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import { Match_card_component } from "./components/match-card-component/match-card-component";
 import { Match_Card_List_Component } from "./components/match-card-list-component/match-card-list-component";
+import { SearchBox } from "./components/SearchBox/search-box-component";
 import "./App.css";
-
+//name: "Prime League Pro Division" Take these games out
+//name: "worlds"// "Worlds" , KEep these games in.
 class App extends Component {
   constructor(props) {
     super(props);
@@ -27,9 +29,10 @@ class App extends Component {
   render() {
     const { matches } = this.state;
     return (
-      <div>
+      <div className="App"> 
+        <h1> Upcoming Worlds Matches </h1>
         {/* {this.print_matches()} */}
-
+        <SearchBox/>
         <Match_Card_List_Component match={matches}></Match_Card_List_Component>
 
         {/* {this.print_matches()} */}
