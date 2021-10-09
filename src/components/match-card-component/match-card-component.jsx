@@ -6,6 +6,7 @@ export const Match_card_component = (props) => {
   // console.log("LINE 20 in the props");
   // console.log(props.match.name);
   // console.log(props.match.league.name);
+  //props.match.scheduled_at
 
   // Check if this is the write way to filter stuff.
   if (props.match.league.name.toLowerCase() != "worlds") {
@@ -14,10 +15,12 @@ export const Match_card_component = (props) => {
   return (
     <div className="match-card-container">
       {props.match.name}
-      <div>
-        {" "}
-        {props.match.match_type}: {props.match.number_of_games}
+      <br />
+      <div className="number-of-games">
+        {/* Add Padding to this in CSS */} Best of:{" "}
+        {props.match.number_of_games}
         <div> {"\n"}</div>
+        <div>{props.match.scheduled_at}</div>
         <br />
       </div>
 

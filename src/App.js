@@ -5,9 +5,9 @@ import { Match_Card_List_Component } from "./components/match-card-list-componen
 import { SearchBox } from "./components/SearchBox/search-box-component";
 import "./App.css";
 
-//name: "Prime League Pro Division" Take these games out
-//name: "worlds"// "Worlds" , KEep these games in.
-// this.setState.matches.league.name.filter("worlds");
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat
+// TODO: Group by Date Time
+// ToDo Styling
 class App extends Component {
   constructor(props) {
     super(props);
