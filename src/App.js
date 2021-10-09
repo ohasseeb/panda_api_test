@@ -4,14 +4,17 @@ import { Match_card_component } from "./components/match-card-component/match-ca
 import { Match_Card_List_Component } from "./components/match-card-list-component/match-card-list-component";
 import { SearchBox } from "./components/SearchBox/search-box-component";
 import "./App.css";
+
 //name: "Prime League Pro Division" Take these games out
 //name: "worlds"// "Worlds" , KEep these games in.
+// this.setState.matches.league.name.filter("worlds");
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       matches: [],
+      searchField: "",
     }; // End this.state
   } // end Ctor
 
@@ -22,18 +25,31 @@ class App extends Component {
     )
       .then((response) => response.json())
       .then((data) => this.setState({ matches: data }));
+    console.log(this.state.matches[0] ? this.state.matches[0].league : "");
 
     // console.log("In the Component Did Mmount function");
   } // End Component Did Mount
 
+  handleChange = (e) => {
+    this.setState({ searchField: e.target.value });
+  };
+
+  // props.match.name
   render() {
-    const { matches } = this.state;
+    const { matches, searchField } = this.state;
+    const filteredMatches = matches.filter((match) =>
+      match.name.toLowerCase().includes(searchField.toLowerCase())
+    );
+    console.log("Filtered Matches: ", filteredMatches);
     return (
-      <div className="App"> 
+      <div className="App">
         <h1> Upcoming Worlds Matches </h1>
         {/* {this.print_matches()} */}
-        <SearchBox/>
-        <Match_Card_List_Component match={matches}></Match_Card_List_Component>
+        <SearchBox placeholder="Team Name" handleChange={this.handleChange} />
+
+        <Match_Card_List_Component
+          match={filteredMatches}
+        ></Match_Card_List_Component>
 
         {/* {this.print_matches()} */}
       </div>

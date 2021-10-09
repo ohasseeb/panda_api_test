@@ -3,25 +3,14 @@ import React, { Component } from "react";
 import "./match-card-styles.css";
 
 export const Match_card_component = (props) => {
-  const render_matches = () => {
-    if (props.match[0] != "") {
-      for (var i = 0; i < props.match.length; i++) {
-        return <div> {props.match[0] ? props.match[i].name : ""}</div>;
-      }
-    } // End if
-    else if (props.match[0] == undefined) {
-      render_matches();
-    } else {
-      return;
-    }
+  // console.log("LINE 20 in the props");
+  // console.log(props.match.name);
+  // console.log(props.match.league.name);
 
-    return;
-  };
-
-  console.log("LINE 20 in the props");
-  console.log(props.match.name);
-  console.log(props.match);
-
+  // Check if this is the write way to filter stuff.
+  if (props.match.league.name.toLowerCase() != "worlds") {
+    return null;
+  }
   return (
     <div className="match-card-container">
       {props.match.name}
