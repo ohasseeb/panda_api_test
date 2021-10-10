@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  background: url("backGround.jpg");
+  margin: -2em;
+}
+
+#Title {
+  color: white;
 }
 
 .App-logo {

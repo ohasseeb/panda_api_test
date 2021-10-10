@@ -40,10 +40,10 @@ class App extends Component {
     const filteredMatches = matches.filter((match) =>
       match.name.toLowerCase().includes(searchField.toLowerCase())
     );
-    console.log("Filtered Matches: ", filteredMatches);
+    // console.log("Filtered Matches: ", filteredMatches);
     return (
       <div className="App">
-        <h1> Upcoming Worlds Matches </h1>
+        <h1 id="Title"> Upcoming Worlds Matches </h1>
         {/* {this.print_matches()} */}
         <SearchBox placeholder="Team Name" handleChange={this.handleChange} />
 
