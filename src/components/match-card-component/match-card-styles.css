@@ -1,6 +1,5 @@
 .match-card-container {
-  display: flex;
-  flex-direction: column;
+  width: 50%;
   background-color: grey;
   border: 1px solid #c36666;
   border-radius: 5px;
