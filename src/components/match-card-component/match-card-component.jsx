@@ -12,6 +12,7 @@ export const Match_card_component = (props) => {
   if (props.match.league.name.toLowerCase() != "worlds") {
     return null;
   }
+  let modifiedDate = new Date(props.match.scheduled_at);
   return (
     <div className="match-card-container">
       {props.match.name}
@@ -20,7 +21,7 @@ export const Match_card_component = (props) => {
         {/* Add Padding to this in CSS */} Best of:{" "}
         {props.match.number_of_games}
         <div> {"\n"}</div>
-        <div>{props.match.scheduled_at}</div>
+        <div>{modifiedDate.toString()}</div>
         <br />
       </div>
 
