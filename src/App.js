@@ -21,7 +21,8 @@ class App extends Component {
   componentDidMount() {
     console.log("IN THE Component did  Mount function");
     fetch(
-      "https://api.pandascore.co/lol/matches/upcoming?token=NCwDu3hO22ttsSy8guFfR4Zfxv0vmBOmxXRNCZlKxg8kvi-tI6o"
+      "https://api.pandascore.co/lol/matches/upcoming?token=NCwDu3hO22ttsSy8guFfR4Zfxv0vmBOmxXRNCZlKxg8kvi-tI6o",
+      { mode: "cors" }
     )
       .then((response) => response.json())
       .then((data) => this.setState({ matches: data }));
