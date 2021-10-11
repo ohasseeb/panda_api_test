@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/panda_api_test/static/css/main.a63fdbe2.chunk.css",
+    "main.js": "/panda_api_test/static/js/main.77e13905.chunk.js",
+    "main.js.map": "/panda_api_test/static/js/main.77e13905.chunk.js.map",
+    "runtime-main.js": "/panda_api_test/static/js/runtime-main.6f7d5a36.js",
+    "runtime-main.js.map": "/panda_api_test/static/js/runtime-main.6f7d5a36.js.map",
+    "static/js/2.e75a5543.chunk.js": "/panda_api_test/static/js/2.e75a5543.chunk.js",
+    "static/js/2.e75a5543.chunk.js.map": "/panda_api_test/static/js/2.e75a5543.chunk.js.map",
+    "static/js/3.fc053177.chunk.js": "/panda_api_test/static/js/3.fc053177.chunk.js",
+    "static/js/3.fc053177.chunk.js.map": "/panda_api_test/static/js/3.fc053177.chunk.js.map",
+    "index.html": "/panda_api_test/index.html",
+    "static/css/main.a63fdbe2.chunk.css.map": "/panda_api_test/static/css/main.a63fdbe2.chunk.css.map",
+    "static/js/2.e75a5543.chunk.js.LICENSE.txt": "/panda_api_test/static/js/2.e75a5543.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/panda_api_test/static/media/backGround.3296ebbe.jpg",
+    "static/media/logo.6ce24c58.svg": "/panda_api_test/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f7d5a36.js",
+    "static/js/2.e75a5543.chunk.js",
+    "static/css/main.a63fdbe2.chunk.css",
+    "static/js/main.77e13905.chunk.js"
+  ]
+}
