@@ -3,19 +3,19 @@ import React, { Component } from "react";
 import "./match-card-styles.css";
 
 export const Match_card_component = (props) => {
-  // console.log("LINE 20 in the props");
-  // console.log(props.match.name);
-  // console.log(props.match.league.name);
-  //props.match.scheduled_at
+  console.log(props.match);
   if (props.match == "Tournament is Over") {
-    console.log("in the function");
-    return <div className="match-card-container">Tournament is Over;</div>;
+    // console.log("in the function");
+    console.log(props);
+    return <div className="match-card-container">Worlds 2021 is Complete</div>;
   }
 
-  // Check if this is the write way to filter stuff.
+  // Check if Worlds is over
+
   if (props.match.league.name.toLowerCase() != "worlds") {
     return (
       <div>
+        {/* This is a Recursive Call */}
         <Match_card_component
           match={"Tournament is Over"}
         ></Match_card_component>

@@ -1,5 +1,5 @@
-.searchBox{
-
-    display:flex;
-    justify-content: center;
+.searchBox {
+  display: flex;
+  justify-content: center;
+  margin-right: 6em;
 }

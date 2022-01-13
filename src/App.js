@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import { Match_card_component } from "./components/match-card-component/match-card-component";
 import { Match_Card_List_Component } from "./components/match-card-list-component/match-card-list-component";
 import { SearchBox } from "./components/SearchBox/search-box-component";
 import "./App.css";
