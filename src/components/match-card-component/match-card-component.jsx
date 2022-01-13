@@ -7,12 +7,24 @@ export const Match_card_component = (props) => {
   // console.log(props.match.name);
   // console.log(props.match.league.name);
   //props.match.scheduled_at
+  if (props.match == "Tournament is Over") {
+    console.log("in the function");
+    return <div className="match-card-container">Tournament is Over;</div>;
+  }
 
   // Check if this is the write way to filter stuff.
   if (props.match.league.name.toLowerCase() != "worlds") {
-    return null;
+    return (
+      <div>
+        <Match_card_component
+          match={"Tournament is Over"}
+        ></Match_card_component>
+      </div>
+    );
   }
   let modifiedDate = new Date(props.match.scheduled_at);
+
+  console.log("NAME LINE 17", props.match.name);
   return (
     <div className="match-card-container">
       {props.match.name}
